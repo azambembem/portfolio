@@ -1,32 +1,48 @@
-import "./globals.css";
-import Link from "next/link";
-import { ReactNode } from "react";
-import ErrorBoundary from "../components/ErrorBoundary";
+// import "./globals.css";
+// import { Inter } from "next/font/google";
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+// const inter = Inter({ subsets: ["latin"] });
+
+// export const metadata = {
+//   title: "My Redux App with Next.js",
+//   description: "A simple app using Redux with Next.js"
+// };
+
+// export default function RootLayout({
+//   children
+// }: {
+//   children: React.ReactNode;
+// }) {
+//   return (
+//     <html lang="en">
+//       <body className={inter.className}>{children}</body>
+//     </html>
+//   );
+// }
+
+// 2
+import "./globals.css";
+import { Inter } from "next/font/google";
+import { ThemeProvider } from "next-themes";
+
+const inter = Inter({ subsets: ["latin"] });
+
+export const metadata = {
+  title: "My Redux App with Next.js",
+  description: "A simple app using Redux with Next.js"
+};
+
+export default function RootLayout({
+  children
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
-      <body className="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
-        <nav className="p-4 bg-blue-700 text-white flex justify-center space-x-6">
-          <Link href="/" className="hover:text-yellow-300">
-            Home
-          </Link>
-          <Link href="/about" className="hover:text-yellow-300">
-            About Us
-          </Link>
-          <Link href="/blog" className="hover:text-yellow-300">
-            Blog
-          </Link>
-          <Link href="/contact" className="hover:text-yellow-300">
-            Contact
-          </Link>
-        </nav>
-        <ErrorBoundary>
-          <main className="container mx-auto p-6 flex-grow">{children}</main>
-        </ErrorBoundary>
-        <footer className="bg-gray-200 text-center text-sm p-4 mt-auto">
-          © 2024 Your Blog. All rights reserved.
-        </footer>
+      <body className={inter.className}>
+        <ThemeProvider attribute="class" defaultTheme="system">
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
