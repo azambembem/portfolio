@@ -85,27 +85,18 @@ const Resume = () => {
 
             <div className="flex mt-6 gap-8">
               <div className="w-[50%]">
-                <div className="text-xl font-bold">WORK EXPERIENCE</div>
+                <div className="text-xl font-bold">PROJECTS EXPERIENCE</div>
                 <hr className="border-t-2 border-black mt-1 mb-3 w-full" />
                 <h3 className="text-xl font-normal">Front-End Developer</h3>
-                <h4 className="text-amber-700 text-base font-semibold mt-2">
-                  HubSpot
-                </h4>
+
                 <div className="flex items-center mt-1">
                   <CalendarOutlined className="mr-2" />
-                  <span className="font-normal">May 2022 - Present</span>
+                  <span className="font-normal">May 2020 - Present</span>
                   <EnvironmentOutlined className="ml-20 mr-2" />
-                  {/* <span className="font-normal">Remote</span> */}
+                  <span className="font-normal">1342, Seongnam-daero</span>
                 </div>
                 <ul className="mt-3 leading-relaxed list-disc ml-6 font-normal">
-                  <li>
-                    Developed a Flower E-commerce Website: Designed and
-                    implemented a responsive front-end for a flower shop website
-                    using React, HTML5, CSS3, and JavaScript. Integrated a
-                    payment gateway for seamless transactions and developed a
-                    dynamic product catalog with real-time data fetching from an
-                    API.
-                  </li>
+                  <li>Developed API.</li>
                   <li>
                     Built a Bookstore Website: Led the front-end development for
                     an online bookstore using React and Node.js. Implemented
@@ -136,39 +127,23 @@ const Resume = () => {
                   </li>
                 </ul>
 
-                <h3 className="mt-8 text-xl font-normal">
-                  Software Engineer I
-                </h3>
-                <h4 className="text-amber-700 text-base font-semibold mt-2">
-                  Zillow
-                </h4>
+                <h3 className="mt-8 text-xl font-normal">Publish</h3>
+
                 <div className="flex items-center mt-1">
                   <CalendarOutlined className="mr-2" />
-                  <span className="font-normal">May 2020 - June 2021</span>
-                  <EnvironmentOutlined className="ml-20 mr-2" />
-                  <span className="font-normal">Remote</span>
+                  <span className="font-normal">March 2023 - June 2024</span>
                 </div>
                 <ul className="mt-3 leading-relaxed list-disc ml-6 font-normal">
                   <li>
-                    Developed membership, event, and legal platform technology
-                    solutions, and automated internal processes.
-                  </li>
-                  <li>
-                    Generated $50K+ in annual ad revenue as a system
-                    administrator of a large network of websites.
-                  </li>
-                  <li>
-                    Designed and implemented web applications along with 3rd
-                    party software integrations as a web team liaison for all
-                    interdepartmental and customer-facing projects.
-                  </li>
-                  <li>
-                    Developed a node.js server to validate membership and track
-                    digital badges being used, saving the company $22.5K.
-                  </li>
-                  <li>
-                    Mentored 6 team members, enabling them to achieve
-                    professional growth and personal goals.
+                    Lee, Jaehyeong, et al. "Android malware detection using
+                    machine learning with feature selection based on the genetic
+                    algorithm." Mathematics 9.21 (2021): 2813. <br />
+                    <a
+                      href="https://doi.org/10.3390/math9212813"
+                      className="underline hover:underline-offset-4"
+                    >
+                      https://doi.org/10.3390/math9212813
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -221,13 +196,6 @@ const Resume = () => {
                 </ul>
               </div>
             </div>
-            <h3 className="mt-8 text-xl font-normal">Publish</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Recusandae, nostrum molestiae delectus deserunt quos quas nemo
-              aliquam est ipsa dolorum libero facere minus quaerat sint laborum
-              placeat sapiente asperiores alias!
-            </p>
           </div>
         </div>
       </div>

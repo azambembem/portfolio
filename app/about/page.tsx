@@ -1,6 +1,5 @@
 "use client";
 import Navbar from "../../components/Navbar";
-import { useRouter } from "next/navigation";
 
 const About = () => {
   return (
@@ -8,7 +7,7 @@ const About = () => {
       <Navbar />
       <div className="flex justify-center items-center min-h-screen">
         <div className="w-[75%] mx-auto mt-24">
-          <div className="text-5xl font-bold pl-36 mb-8">About</div>
+          <div className="text-5xl font-bold pl-52 mb-8">About</div>
           <p className="w-[70%] mx-auto text-lg font-light leading-10 whitespace-pre-line">
             I am{" "}
             <a

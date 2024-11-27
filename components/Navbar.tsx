@@ -22,7 +22,6 @@ const Navbar = () => {
   const { setTheme, theme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
-  // 클라이언트 마운트 후 설정 및 body 클래스 변경
   useEffect(() => {
     setMounted(true);
     document.body.className = theme === "dark" ? "dark" : "light";
